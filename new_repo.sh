@@ -5,6 +5,8 @@ if [ -z ${1+x} ]
  else REPONAME=$1;
 fi
 
+clear
+
 echo "Creating boilerplate"
 mkdir $REPONAME
 cd $REPONAME
