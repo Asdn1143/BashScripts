@@ -1,6 +1,9 @@
 #!/bin/bash 
-echo "Name of the repository:"
-read REPONAME
+
+if [ -z ${1+x} ]
+ then echo "Name of the repository:";read REPONAME;
+ else REPONAME=$1;
+fi
 
 echo "Creating boilerplate"
 mkdir $REPONAME
