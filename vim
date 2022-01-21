@@ -1,1 +1,0 @@
- /home/albert/Documents/JournalEntries/01.21.22.txt
