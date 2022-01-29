@@ -6,11 +6,28 @@ editor=vim;
 format=txt;
 path=~/Documents/JournalEntries
 
-date=$(date +'%m.%d.%y');
-file=$path/$date.$format;
+date=$(date +'%d.%m.%y');
+file=$date.$format;
+filepath=$path/$file
 
-#echo -n creates file onl if it doesn't exist yet  
-echo -n "" > $file; $editor $file
+test -f $filepath || touch $filepath
+
+$editor $filepath
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
