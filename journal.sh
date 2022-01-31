@@ -31,10 +31,10 @@ clear
     case $REPLY in
 
         y)
-        echo "Uploaded to cloud"; break; cleanup ;;
+        echo "Uploaded to cloud"; cleanup ; break ;;
 
         n)
-        echo -n "Saving for later"; break; cleanup ;;
+        echo -n "Saving for later"; cleanup ; break ;;
 
         *)
         echo -n "Wrong input"; cleanup ;;
